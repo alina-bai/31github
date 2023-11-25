@@ -1,23 +1,23 @@
-body{
-    background: black;
-}
-h1 {
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-    
-.motivation {
-   width: 50%;
-   margin-left: 25%;
-   margin-top: 100px;
-   color: white;
-   font-family: "Libre Baskerville", serif;
-   text-align: center;
+/* Don't change the existing CSS. */
+
+.box {
+  background-color: blue;
+  padding: 10px;
 }
 
-.motivation-img {
-    border: 5px solid white;
-    width: 100%;  
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+.inner-box {
+  background-color: red
 }
 
-
+.white-text {
+  color: white;
+}
+ 
+#outer-box {
+  background-color: purple;
+}
