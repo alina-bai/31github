@@ -1,0 +1,20 @@
+Today I have studied about Bootstrap layouts. It little difficult for me. 
+They gave us the website to practise  https://appbrewery.github.io/bootstrap-layout/
+
+<!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+      <div class="row">
+        <div class="">Column 1</div>
+        <div class="">Column 2</div>
+      </div>
+<!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+  <div class="row">
+    <div class="">Column 1</div>
+    <div class="">Column 2</div>
+    <div class="">Column 3</div>
+  </div>
+      
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+  <div class="row">
+    <div class="">50% desktop, 100% mobile</div>
+    <div class="">50% desktop, 100% mobile</div>
+  </div>
