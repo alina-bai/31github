@@ -1,0 +1,144 @@
+.container {
+    background-color: rgb(205, 239, 252);
+    
+}
+
+.logo img{
+    border-radius: 50%;
+    float: left;
+    
+    
+   
+}
+
+.title-text {
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+    font-size: x-large;
+    padding-top: 200px;
+    line-height: 1,5;
+}
+
+.title-text h1,
+.title-text p {
+    display: block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+.title-text h1 {
+    margin-bottom: 0.5em; 
+}
+
+.photo-container{
+    text-align: center;
+}
+
+
+
+.mid-container img{
+    border-radius: 50%;
+    margin-top: 200px;
+    
+}
+
+body {
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: x-large;
+    display: block;
+    color:  #11cdd4;
+
+}
+
+.container-2 p {
+    display: block;
+    color: gray;
+    font-size: x-large;
+    line-height: 2;
+    text-align: center;
+}
+
+/* Center the paragraph under the photo on larger screens */
+@media only screen and (min-width: 768px) {
+    .container-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mid-container {
+        margin-bottom: 20px; /* Adjust as needed for spacing between photo and text */
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* Add styles for smaller screens here */
+    .title-text {
+        padding-top: 50px; /* Adjust as needed for smaller screens */
+    }
+    .mid-container img {
+        margin-top: 100px; /* Adjust as needed for smaller screens */
+    }
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    text-decoration: none;
+    
+  }
+  
+  .parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 50px auto 0 auto;
+    text-align: left;
+    row-gap: 1rem;
+  }
+
+ .bottom-container {
+     background-color: #1FDEC3;
+ }
+  
+  .footer {
+    background-color: #1FDEC3;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+}
