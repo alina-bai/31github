@@ -1,0 +1,616 @@
+ /*Обращения бывают следующих типов
+ 1) теги p
+ +2) класс .
+ +3) id #
+ 4) атрибуты [] */
+
+
+
+ /*Базовые настройки страницы */
+    /*--------      * - означаетобращение ко всем элементам сайта        -------*/
+    * {
+        box-sizing: border-box;
+    }
+
+
+    body, p {
+        margin: 0;
+    }
+
+
+ /*Конец базовых настроек страницы*/
+
+
+
+
+
+ /* Универсальные стили*/
+
+      /*    , - Это означает дополнительное обращение к тому или иному элементу.  
+                Это перечисление подключений новых классов
+      */
+
+
+
+    .left,.ul_li > li {
+        float: left;
+        /* > -это стрелка означает что обращение будет происходить только для родительских элементов. */
+        /*float-это обтекание. То есть выравнивание.
+                Выравнивание: куда
+                Выранивание: в левую сторону = float:left: ;
+                Выранивание: в правую сторону =float:right: ; */
+    }
+
+    .right {
+        float: right;
+    }
+
+    .b-r  li {
+        border-right: 1px solid rgb(65, 59, 59);
+    }
+    /* border -  границы
+       границы: ширина тип цвет 
+       */
+    .b-r li:last-child {
+        border-right: 0
+    }
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        
+        
+        /*margin - это внешний отступ.
+                  Так же margin является выравниванием
+                  margin: 0 auto - ноль отступов со всех сторон и это значит выравнить по центру. */
+    }
+
+    .m-l-10 {
+        margin-left: 10px;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .orange {
+        color: orange;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .gray {
+        color: gray;
+    }
+
+    .dnone {
+        display: none;
+    }
+
+    .bg_orange {
+        background: #ffcc33;
+    }
+    .bg_green {
+        background: green;
+    }
+    .bg_blue {
+        background: rgb(129, 158, 221);
+    }
+    .bg_red{
+        background: rgb(208, 105, 105);
+    }
+
+ /* Конец универсальных стилей */
+
+
+
+
+ /* Стили для страниц */
+
+    /* Урок 14 */
+
+ /*Верхнее меню */
+    .vh {
+        background: #faf5f5;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .vh.ul_li i {
+        margin-right: 10 px;
+    }
+
+    /*position */
+
+    .msg {
+        position: absolute;
+        /*position - это позиционирование*/
+        top: -7px;
+        right: -3px;
+        background: red;
+        width: 13px;
+        height: 13px;
+        text-align: center;
+        color: white;
+        font-size: 9px;
+        line-height: 1.5;
+        border-radius: 13px;
+    }
+
+    .icon-msg {
+        position: relative;
+    }
+
+
+    .vh ul li {
+        float: left;
+    }
+
+    .ul_li, ul {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .ul_li li {
+        padding: 10px;
+    }
+  
+/* Урок 16 */
+    /* центральное меню */
+
+    .center_menu ul {
+        display: flex;
+        /*
+            display - это блок отображения. Возможные вариации отображения
+            :flex - быть адаптивным
+        */
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    span.seryi_krug {
+        background: #ececec;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 20px;
+        color: #4c4b6c;
+    }
+
+    span.yellow_krug {
+        background: rgb(239, 139, 18);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+        line-height: 2.5;
+        border-radius: 20px;
+        color: #4c4b6c;
+    }
+
+    .center_menu .right > p:first-child {
+        font-weight: bold;
+        color: #4c4b6c;
+    }
+
+    .center_menu .right > p  {
+        color: #ababab
+    }
+
+    /*Nijnee menu*/
+ .nijnee_menu {
+     display: inline-block;
+     width: 100%;
+     background: #f7f7f7;
+     position: relative;
+     
+ }
+
+ .dropdown_menu {
+     display: none;
+     position: absolute;
+     background: white;
+     border: 1px solid black;
+     width: 100%;
+     top: 42px;
+     left: 0;
+     z-index: 1;
+
+ } 
+
+ .hover_menu li:hover .dropdown_menu {
+    display:block;
+}
+
+span  a:first-child {
+    background: rgb(44, 156, 181);
+    width: 110px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 2;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.hover_menu a {
+    color: rgb(56, 50, 50);
+    margin-right: 60px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    font-weight: bold;
+}
+ .search  input{
+    background: rgb(245, 242, 242);
+    width: 220px;
+    height: 35px;
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    border: 3px solid #fff; 
+ }
+
+ 
+/* Урок 17 */
+
+    .block_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #product {
+        padding: 0  20px;
+    }
+    .body_block {
+        margin-top: 20px;
+    }
+
+    .list_product > {
+        float: left;
+    }
+    .list_product {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block_stars {
+        display: inline-block;
+    }
+
+    .block_stars > div {
+        float: left;
+    }
+     
+    /*Product style */
+    .product {
+        display: inline-block;
+        min-height: 300px;
+    }
+
+    .product  img {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        object-fit: contain;
+    }
+
+    .body_product {
+        margin-top: 10px;
+    }
+
+    .stars {
+        margin-right: 5px;
+    }
+
+    .stars > i {
+        color: rgb(179, 179, 21);
+        font-size: 10px;
+        margin-left: -4px;
+    }
+    
+    .reviews {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .price{
+        display: inline-block;
+        width: 100%;
+        margin-top: -5px;
+    }
+
+    .price span {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4c4b6c;
+    }
+
+    .price del {
+        font-size: 15px;
+        margin-left: 12px;
+        color: #9e9e9e;
+        line-height: 2;
+
+    }
+
+    .btns li {
+        padding: 0px;
+    }
+
+    .btns .ul_li {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btns .seryi_krug {
+        transition: 5s;
+    }
+    .btns li:hover .seryi_krug {
+        background: rgb(20, 130, 176);
+        color: white;
+        cursor: pointer;
+    }
+
+    .img {
+        position: relative;
+    }
+
+    .desc_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ffffffb5;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #dcdcdcb5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 2s;
+    }
+
+    .desc {
+        width: 80%;
+        text-align: center;
+    }
+    .ttl {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 5pxs;
+    }
+
+    .product:hover .dnone {
+        display: block;
+    }
+    .product:hover .block_stars {
+        display: none;
+    }
+
+
+    .product:hover .desc_img{
+        opacity: 1;
+    }
+    
+    .block_stars.active {
+        display: block;
+    }
+
+    .desc_img.active {
+        opacity: 1;
+    }
+
+    .tooltip {
+        position: absolute;
+        right: -7px;
+        top: 7 px;
+        color: white;
+        padding: 3px 6px;
+        font-size: 13px;
+        border-radius: 4px;
+        z-index: 2;
+    }
+
+    .search_input {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .search_input i {
+        position: absolute;
+        top: 18px;
+        right: 17px;
+    }
+
+    /* Lesson 18 */
+
+    #banner {
+        width: 100px;
+        display: inline;
+    }
+
+    .btn_call {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn_call a {
+        background: #7cd0f5;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 5s;
+    }
+
+    .btn_call a:hover {
+        background: #1c80aa ;
+    }
+
+    .f_li_hover li:hover {
+        margin-left: 15px;
+        font-weight: bold;
+        padding: 5px 0px 5px 0px;
+        transition: 5s;
+    }
+
+    .f_ttl::before {
+        content: "";
+        width: 50px;
+        height: 3px;
+        background: #d2d2d2;
+        position: absolute;
+        bottom: -7px;
+    }
+
+    .f_ttl {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    footer .ul_li li{
+        padding: 2px;
+    }
+
+    .nijnee_menu .container > div {
+        width: 45%;
+    }
+
+/*Конец стилей для страницы */
+
+/*Мобильная адаптация */
+/*Urok19*/
+
+/*Заметка:
+
+Есть2 вида адаптации:
+ 1)Резиновый шаблон - это  когда весь сайт создан в процентном соотношении.То есть когда мы будем уменьшать ра
+ 2)Фиксированный - это  когда мы адаптируем сайт по стандартам того или иного устройства.*/
+
+
+ /*  Пример  размера Iphone 6/7/8 Plus */
+@media (max-width:1024px) {
+    /*max-width:1024px- от этого размера и ниже */
+    /*min-max-width:1024px- от этого размера и выше*/     
+
+.container
+width: auto; размера и ниже
+
+.list_product {
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.product {
+    margin-right: 34px;
+}
+
+.list_product > .product:nth-child(4n){
+    margin-right: 0;
+}
+
+.center_menu p,  {
+    font-size: 12px;
+}
+
+.f_ttl {
+    font-size: 12px;
+}
+
+}
+
+@media (max-width:812px) {
+    .vh .left,
+    .center_menu .left {
+        display: none;
+    }
+
+    .product {
+        margin-right: 30px;
+    }
+    
+    .list_product > .product:nth-child(3n){
+        margin-right: 0;
+    }
+    .list_product > .product:nth-child(4n){
+        margin-right: 30px;
+    }
+
+    
+@media (max-width:736px)
+    .center_menu .ul_li > li:nth-child(3),
+    .center_menu.ul_li >li:nth-child(4)
+    .nijnee_menu .left {
+        display: none;
+}
+
+    .nijnee_menu .container > div,
+    .right img,
+    .product img {
+         width: 90%;
+    }
+
+
+    @media (max: width 480px) {
+        .vh, .center_menu p {
+            font-size: 10px;
+        }
+        .vh, .right {
+            float: none;
+        }
+        .center_menu .img {
+            width: 80px;
+
+        }
+       
+       
+       
+       
+       
+        .center_menu li {
+            padding-top: 0;
+        }
+
+        .nijnee_menu {
+            font-size: 12px;
+    
+    }
+ 
+    .product {
+        margin-right: 0;
+        width: 45%;
+    }
+
+    .list_product {
+        justify-content: space-between;
+    }
+
+    .list_product > .product:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    
+}
+/* @media- этот параметр нужен для того чтобы обратиться к размеру устройства пользователя */
+/*max-width - этот параметр нужен для того чтобы указать минимульную ширину блока и указать для него и для экранов ниже размером стили */
+
+/* Данная запись говорит о том чтобы я мог получить размер экрана 414 px  и использовал стили которые в нем будут заключены
+
+/*Правила адаптации */
+/*1)адаптация начинается от большего к меньшему */
+
+
+/*Конец Мобильной адаптации */
